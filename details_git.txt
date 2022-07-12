@@ -43,12 +43,30 @@ git branch *nome da branch a ser criada* > cria uma nova branch com o nome escol
 git checkout *nome da branch que deseja selecionar* > seleciona a branch desejada
 para fazer as modificações
 
+git merge *nome da branch que deseja mesclar as alterações* > é necessário estar 
+na branch a qual deeseja receber as alterações, uni versões (códigos, arquivos, etc)
+
+git pull > traz as atualizações do servidor para a máquina local
+
+passo a passo para mergiar em situações em equipe:
+
+1.git pull da branch principal
+2.gerar uma nova branch a partir da branch principal
+3.trabalar e adicionar novas funcionalidades na nova branch que criou
+4.finalizar o trabalho na branch temporária
+5.git checkout na branch principal
+6.git pull
+7.mergiar(unir) o código da branch temporária com a branch principal (depois de testar)
+8.git push da branch principal
+
 mensagens:
 
  "no commits yet" = nenhum commit ainda. 
 
  "Everything up-to-date" = tudo em dia.
 
+ "staging" = encenação { nome usado geralmente em branchs que estão recebendo 
+atualizações que não estão em produção.
 
 referências : 
 https://www.youtube.com/watch?v=kB5e-gTAl_s&t=2610s
