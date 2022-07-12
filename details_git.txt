@@ -48,6 +48,9 @@ na branch a qual deeseja receber as alterações, uni versões (códigos, arquiv
 
 git pull > traz as atualizações do servidor para a máquina local
 
+git checkout -b *nome da branch* *nome da branch que deseja ser copiada* > cria branch
+a partir da branch que deseja ser copiada
+
 passo a passo para mergiar em situações em equipe:
 
 1.git pull da branch principal
