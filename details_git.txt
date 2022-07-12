@@ -48,3 +48,7 @@ mensagens:
  "no commits yet" = nenhum commit ainda. 
 
  "Everything up-to-date" = tudo em dia.
+
+
+referências : 
+https://www.youtube.com/watch?v=kB5e-gTAl_s&t=2610s
