@@ -23,7 +23,17 @@ para fazer os uploads
 
 git config --global user.name "*nome do usuário*" > para identificação 
 
+git remote add origin *adicionar link do repositório ao qual irá adicionar os
+arquivos* > seleciona o repositório na nuvem escolhido para fazer o upload dos
+arquivos selecionados
 
+git push --set-upstream origin master > seleciona a master no git hub para fazer
+os uploads
+
+git push >
+ 
 mensagens:
 
  "no commits yet" = nenhum commit ainda. 
+
+ "Everything up-to-date" = tudo em dia.
