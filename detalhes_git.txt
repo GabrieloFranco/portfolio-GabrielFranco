@@ -1,0 +1,21 @@
+Git+GitHub
+
+cmd> git --help { saber se o git está instalado corretamente no computador}
+
+para criar repositório git { selecionar a pasta desejada clicar com o botão 
+direito do mouse e selecionar "git bash here".
+
+git init > para criar pasta do .git no diretório selecionado
+
+git status > saber o que foi modificado na pasta
+
+git add "*nome da pasta ou arquivo modificado*" > prepara o arquivo para ser
+adicionado ao controle de versão 
+
+git add . > prepara e adiciona todos os arquivos modificados ao controle de
+versão 
+
+
+mensagens:
+
+ "no commits yet" = nenhum commit ainda. 
