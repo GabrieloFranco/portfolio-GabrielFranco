@@ -15,6 +15,14 @@ adicionado ao controle de versão
 git add . > prepara e adiciona todos os arquivos modificados ao controle de
 versão 
 
+git commit -m "*mensagem indicando o que foi modificado*" > cria commit, onde 
+deve conter resumidamente a mensagem do que foi modificado
+
+git config --global user.email "*email utilizado no github*" > seleciona conta 
+para fazer os uploads
+
+git config --global user.name "*nome do usuário*" > para identificação 
+
 
 mensagens:
 
