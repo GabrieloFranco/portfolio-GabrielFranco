@@ -7,16 +7,8 @@ direito do mouse e selecionar "git bash here".
 
 git init > para criar pasta do .git no diretório selecionado
 
-git status > saber o que foi modificado na pasta
-
 git add "*nome da pasta ou arquivo modificado*" > prepara o arquivo para ser
 adicionado ao controle de versão 
-
-git add . > prepara e adiciona todos os arquivos modificados ao controle de
-versão 
-
-git commit -m "*mensagem indicando o que foi modificado*" > cria commit, onde 
-deve conter resumidamente a mensagem do que foi modificado
 
 git config --global user.email "*email utilizado no github*" > seleciona conta 
 para fazer os uploads
@@ -30,8 +22,27 @@ arquivos selecionados
 git push --set-upstream origin master > seleciona a master no git hub para fazer
 os uploads
 
-git push >
- 
+git status > saber o que foi modificado na pasta
+
+git add . > prepara e adiciona todos os arquivos modificados ao controle de
+versão 
+
+git commit -m "*mensagem indicando o que foi modificado*" > cria commit, onde 
+deve conter resumidamente a mensagem do que foi modificado
+
+git push > envia as atualizações com o commit
+
+git reflog > verifica o histórico de atualizações
+
+git reset --hard *digitar id*> retorna a versão selecionada
+
+git branch > para ver as branchs disponíveis
+
+git branch *nome da branch a ser criada* > cria uma nova branch com o nome escolhido
+
+git checkout *nome da branch que deseja selecionar* > seleciona a branch desejada
+para fazer as modificações
+
 mensagens:
 
  "no commits yet" = nenhum commit ainda. 
