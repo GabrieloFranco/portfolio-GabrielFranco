@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Gabriel Franco</title>
+		<!--META tags-->
+		<meta charset="utf-8">
+		<meta name="description" content="Portfólio Gabriel Franco">
+		<meta name="keywords" content="Portfólio, currículo, Gabriel, Franco ">
+		<meta name="author" content="Gabriel Franco">
+
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        
+</head>
+<body name="body">
+
+    <input type="checkbox" name="darkmode" id="darkmode">
+    
+    <div id="corpo" >
+        
+        <header class="header">
+
+            <a href="index.html" id="logog"><img src="image/logo.png" alt="Logo Site" title="Logo Site"></a>
+
+                <nav>
+                    <div class="contato">
+                    <ul class="menu" >
+                        <div>
+                        <li  class="contato">
+                            <a href="#" class="conta" title="contato">Contato</a>
+                            <ul>
+                                <li>
+                                    <p> me chame no whatsapp <br/>
+                                        <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" title="Entre em contato pelo Email" target="_blank">Email: g.franco@aluno.ifsp.edu.br <br/></a>
+                                       <a href="https://www.google.com.br/maps/preview" title="Veja nossa loja no Maps" target="_blank"> Endereço: Lorem Ipsum, Lorem XX-SP</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            
+                            <label class="darkmodelabel" for="darkmode" name="darkmode">Darkmode</label>
+                        </li>
+                    </ul>
+                    </div>
+
+                </nav>
+          
+        </header>
+        
+        <nav>
+            <div class="dp-menu">
+            <ul>
+                <li>
+                    <a href="#" title="faça seu login ou cadastre-se" >Login</a>
+                    <ul>
+                        
+                        <li>
+                            <a href="login.html" title="faça seu login"> Faça seu login</a>
+                        </li>
+
+                        <li>
+                            <a href="cadastro.html" title="cadastre-se"> Cadastre-se</a>
+                        </li>
+                            
+                    </ul>
+                </li>
+                <li>
+                    <form action="#" class="search">
+                        <input type="text" id="texto" placeholder="busque aqui" required>
+                       
+                    </form>
+                </li>
+                
+                <li>
+                    <a href="projetos.html" title="lançamentos" >Projetos</a>
+                </li>
+
+                <li>
+                    <a href="meconheca.html" title="quem somos">Quem sou eu</a>
+                </li>
+
+                
+                
+                
+                    
+            </ul>
+
+            </div>
+        </nav>
+        
+        
+
+        <div class="carrousel">
+            
+            <div id="slides">
+
+                <div id="atual" class="anuncios" >
+                    <img src="image/halow.png" alt="item1"  > <a href="quem somos.html"></a>
+                </div>
+                <div  class="anuncios">
+                    <img src="image/ofertas.png" alt="item2">
+                </div>
+                <div  class="anuncios">
+                    <img src="image/promo.png" alt="item3">
+                </div>
+
+
+            </div>
+            
+        </div>
+        
+        <section class="flex">
+            
+            
+           
+            
+            
+
+        </section>
+
+
+        <footer>
+            <div class="rodape">
+            <ul>
+                <li>
+                    <img id="logog" src="image/logo.png" alt="Ícone GameMania" title="GameMania">
+
+                </li>
+                <li>
+                   <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" title="entre em contato conosco via whatsapp" alt="entre em contato via whatsapp"></a>
+                    </p>
+                </li>
+
+            </ul>
+            </div>
+            
+
+        </footer>
+
+        <div id='modal-promocao' class='modal-container mostrar'>
+
+            <div class="modal">
+                <button class="fechar">
+                    X
+                </button>
+                <h3 class="subtitulo">Receba nossas novidades no seu Email</h3>
+                
+                <form>
+                    <input type="text" class="input" placeholder="Email">
+                    <input type="button" class="button" value="cadastrar"  >
+                    
+                </form>
+    
+            </div>
+            <br> <br> teste <br>
+    
+    
+        </div>
+
+            
+    </div>
+
+    
+    <script src="index.js"></script>
+    <script>
+        
+        function iniciaModal (modalID) {
+        const modal = document.getElementByID (modalID);
+        modal.classList.add('mostrar')
+        modal.addEventListener('click', () =>{
+            console.log('clicou modal')
+        })
+
+        }
+        const logo = document.querySelector('.logog')
+        logo.addEventListener('click', function() {
+        iniciaModal('modal-promocao');
+
+        })
+
+        const scrollWheel = event => {
+                if(event.deltaY < 0){
+                    event.target.scrollBy(300, 0)
+                }
+                else{
+                    event.target.scrollBy(-300, 0)
+                }
+            }
+            
+            // document.querySelector("#slides")
+            //   .addEventListener("wheel", scrollWheel)
+            
+            let count = 0
+            setInterval(function(){
+                count += 400
+                if(count > 4000) count = 0
+                document.querySelector("#slides").scrollTo(count, 0)
+                console.log('moveu')
+            }, 1500)
+
+            // mouse sobre imagens
+
+//            document.querySelector("#slides")
+//          .addEventListener("wheel", event=>{
+//                if(event.deltaY>0){
+//                event.target.scrollBy(200, 0)
+//            }else{
+//                event.target.scrollBy(-200, 0)
+//            }
+//            })
+    </script>
+</body>
+
+</html>
